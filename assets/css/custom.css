@@ -1,0 +1,139 @@
+.left.side-menu{
+	background-color: whitesmoke;
+}
+ 
+.dataTables_filter {
+   width: 50%;
+   float: right;
+   text-align: right;
+},
+ th, td {
+	white-space: nowrap;
+	width: auto;
+
+}
+.panel-body{
+  padding: 0px
+}
+.editable-reponsive{
+	min-width: 870px !important;
+}
+th,tr {
+	background-color: white;
+
+}
+/*.content{
+  overflow:scroll !important;
+}*/
+
+/* div.dataTables_wrapper {
+        margin: 0 auto;
+        /*min-width: 600px;*/
+
+ /*} */
+#title-l{
+	/*margin-left: 16px;*/
+	margin-bottom:10px;
+}
+i.fa-pencil{
+  color: #10c469;
+}
+i.fa-trash-o{
+  color: #ff4242;
+}
+div.DTFC_Blocker{
+  background-color: white;
+}
+
+table{
+  margin: 0 auto;
+
+   
+  border-collapse: collapse;
+ /* table-layout: fixed;*/
+  overflow-x:scroll;
+
+
+  clear: both;
+
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  max-width: none !important;
+
+
+
+  word-wrap:break-word;
+}
+.dataTables_paginate{
+	float: right;
+   text-align: right;
+}
+#material-select{
+
+}
+body{
+  padding-bottom: 0px !important;
+  overflow-x: scroll !important;
+}
+.dataTables tbody tr {
+min-height: 35px; /* or whatever height you need to make them all consistent */
+
+}
+.sub-category-custom{
+	margin-left:13px;
+}
+/*thead{
+  padding-left: 5px;
+}
+.dataTables_scroll
+{
+    overflow:auto;
+}*/
+
+/* Pang right ng pagination ng datatable
+div.dataTables_paginate.ul.pagination{
+
+	float : right !important;
+
+}*/
+/*table.dataTable tbody th,
+table.dataTable tbody td {
+    white-space: nowrap;
+}*/
+
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+ 
+}
+
+ .slider .slides {
+    background-color: transparent;
+    margin: 0;
+    height: 100% ;
+}
+
+.slider .slides li img {
+    height: 100% ;
+    width: 100%;
+    background-position: center;
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    position: top;
+}
+..slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: black;
+}
+ 
+.slider .indicators {
+  bottom: 10px;
+  z-index: 100;
+   
+}

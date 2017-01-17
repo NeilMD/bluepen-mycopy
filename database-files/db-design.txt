@@ -1,0 +1,57 @@
+USERACCOUNT
+user_name (VARCHAR) {PK}
+password (VARCHAR)
+last_name (VARCHAR)
+first_name (VARCHAR)
+monitoring_group (VARCHAR) {FK-USERGROUP}
+competitive_group (VARCHAR) {FK-USERGROUP}
+site_sourcing_group (VARCHAR) {FK-USERGROUP}
+
+USERGROUP
+group_name (VARCHAR) {PK}
+group_info (VARCHAR)
+
+SITEFIELD <- can we possibly make this table read-only? (using triggers)
+column_id (INT) {PK}
+column_name (VARCHAR)
+
+SITE                                   COLUMN INDEX (for reference purposes only, to match with column ID)
+site_ref (VARCHAR) {PK}                0
+province (VARCHAR)                     1
+city (VARCHAR)                         2
+street (VARCHAR)                       3
+location (VARCHAR)                     4
+supplier (VARCHAR)                     5
+supplier_contact (VARCHAR)             6
+supplier_email (VARCHAR)               7
+height (DECIMAL)                       8
+width (DECIMAL)                        9
+avg_height (DECIMAL)                   10
+avg_width (DECIMAL)                    11
+cost (DECIMAL)                         12
+CPSF (DECIMAL)                         13
+avg_CPSF (DECIMAL)                     14
+CPM (DECIMAL)                          15
+avg_CPM (DECIMAL)                      16
+format (VARCHAR)                       17
+x (DECIMAL)                            18
+y (DECIMAL)                            19
+traffic_count (DECIMAL)                20
+score (DECIMAL)                        21
+ref_audience (DECIMAL)                 22
+remarks (VARCHAR)											 23
+
+MATERIALPLACEMENT
+site_ref (VARCHAR) {PK} {FK-SITE}
+time_of_placement (DATE) {PK}					 (24)
+name (VARCHAR)                         25 -- 24
+category (VARCHAR)                     26 -- 25
+subcategory (VARCHAR)                  27 -- 26
+
+MATERIALPRIVILEGE
+group_name (VARCHAR) {PK} {FK-USERGROUP}
+material_name (VARCHAR) {PK}
+
+SITEFIELDPRIVILEGE
+group_name (VARCHAR) {PK}
+column_id (INT) {PK} {FK-SITEFIELD}

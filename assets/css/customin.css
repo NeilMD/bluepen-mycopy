@@ -1,0 +1,45 @@
+table.table {
+clear: both;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+max-width: none !important;
+border-collapse: separate;
+}
+
+
+div.dataTables_wrapper table {
+border-bottom: 1px solid black;
+border-right: 1px solid black;
+}
+
+div.dataTables_wrapper table td {
+border-top: 1px solid black;
+border-left: 1px solid black;
+border-right: none !important;
+border-bottom: none;
+}
+
+div.dataTables_wrapper table th {
+border-top: 1px solid white;
+border-left: 1px solid white;
+border-right: none !important;
+border-bottom: none;
+}
+
+div.dataTables_wrapper table tr:hover td {
+border-left: 1px solid white;
+border-right: none !important;
+border-bottom: none;
+}
+
+div.dataTables_wrapper div.dataTables_scrollHead table {
+border-bottom: none;
+}
+
+table.dataTable,
+table.dataTable td,
+table.dataTable th {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
